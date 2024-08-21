@@ -20,7 +20,6 @@ requirements:
     - pip
     - setuptools
     - setuptools_scm >=8
-    - build
   run:
     - python >=3.11
     - attrs
