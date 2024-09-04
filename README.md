@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@beckermr](https://github.com/beckermr/)
 * [@regro-cf-autotick-bot](https://github.com/regro-cf-autotick-bot/)
 
-
-<!-- dummy commit to enable rerendering -->
-
