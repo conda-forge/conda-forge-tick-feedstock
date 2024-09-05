@@ -1,5 +1,5 @@
 {% set name = "conda-forge-tick" %}
-{% set version = "2024.9.25" %} 
+{% set version = "2024.9.26" %} 
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,15 @@ package:
 
 source:
   url: https://github.com/regro/cf-scripts/archive/refs/tags/{{ version }}.tar.gz
-  sha256: caa127927b24a043c3750c22f551935ef26df48bf88f57a8848f06ecb7f28aed
+  sha256: 49fc8ae48790019f0040e5fd2108dea4309e9a50f7e4d93f8fd8e04aec25548d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
+  entry_points:
+    - conda-forge-tick = conda_forge_tick.cli:main
+    - conda-forge-tick-container = conda_forge_tick.container_cli:cli
 
 requirements:
   host:
@@ -33,6 +36,7 @@ requirements:
     - conda-forge-pinning
     - conda-libmamba-solver
     - conda-forge-metadata >=0.3.0
+    - conda-forge-feedstock-ops >=0.3.0
     - conda-package-handling
     - conda-smithy >=3.34.1
     - conda-build >=3.24.0
@@ -78,6 +82,8 @@ test:
     - conda_forge_tick
   commands:
     - python -c "import conda_forge_tick; assert conda_forge_tick.__version__ == '{{ version }}'"
+    - conda-forge-tick --help
+    - conda-forge-tick-container --help
 
 about:
   home: https://github.com/regro/cf-scripts
