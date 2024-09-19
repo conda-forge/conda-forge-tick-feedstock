@@ -1,5 +1,5 @@
 {% set name = "conda-forge-tick" %}
-{% set version = "2024.9.33" %} 
+{% set version = "2024.9.34" %} 
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/regro/cf-scripts/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 5a73eab3f67ed491618b3dbb9ca56f1bab8672f9088d1fb6a2b33a8bf4d90baf
+  sha256: 1af2c076cf2fb80b180c177842f48ef07310a51dd4d08add61907132d9cf6d96
 
 build:
   noarch: python
