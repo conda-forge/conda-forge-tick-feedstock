@@ -36,7 +36,7 @@ requirements:
     - conda-forge-pinning
     - conda-libmamba-solver
     - conda-forge-metadata >=0.3.0
-    - conda-forge-feedstock-ops >=0.9.0
+    - conda-forge-feedstock-ops >=0.10.2
     - conda-package-handling
     - conda-smithy >=3.34.1
     - conda-build >=3.24.0
