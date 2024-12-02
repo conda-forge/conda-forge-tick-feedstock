@@ -1,5 +1,5 @@
 {% set name = "conda-forge-tick" %}
-{% set version = "2024.11.167" %} 
+{% set version = "2024.12.19" %} 
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/regro/cf-scripts/archive/refs/tags/{{ version }}.tar.gz
-  sha256: a5e4dfdf65c5d756d455188aba9e496d93743d1c56f4f7d3701a0c0dc0264f9a
+  sha256: 8886c1785f558746335699d74ec930fbfdd7031853636bd25d20fa47da378d39
 
 build:
   noarch: python
@@ -36,7 +36,7 @@ requirements:
     - conda-forge-pinning
     - conda-libmamba-solver
     - conda-forge-metadata >=0.3.0
-    - conda-forge-feedstock-ops >=0.9.0
+    - conda-forge-feedstock-ops >=0.10.2
     - conda-package-handling
     - conda-smithy >=3.34.1
     - conda-build >=3.24.0
