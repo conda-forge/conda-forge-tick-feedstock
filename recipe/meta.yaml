@@ -1,3 +1,4 @@
+{% set python_min = '3.11' %}
 {% set name = "conda-forge-tick" %}
 {% set version = "2024.12.205" %} 
 
@@ -12,19 +13,19 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - conda-forge-tick = conda_forge_tick.cli:main
     - conda-forge-tick-container = conda_forge_tick.container_cli:cli
 
 requirements:
   host:
-    - python >=3.11
+    - python {{ python_min }}
     - pip
     - setuptools
     - setuptools_scm >=8
   run:
-    - python >=3.11
+    - python >={{ python_min }}
     - attrs
     - backoff
     - cachecontrol
@@ -78,6 +79,8 @@ requirements:
     - yaml
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - conda_forge_tick
   commands:
