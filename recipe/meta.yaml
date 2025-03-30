@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "conda-forge-tick" %}
-{% set version = "2025.3.125" %}
+{% set version = "2025.3.127" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/regro/cf-scripts/archive/refs/tags/{{ version }}.tar.gz
-  sha256: fea532c391cca9d413f5a5906f16b6176d873bc596e5ac2b2232960d3ad85395
+  sha256: 6ae6e21bbd900ea48dee8cdcb08712474fd43a202a7d6b6c8b7e15454da514fd
 
 build:
   noarch: python
@@ -60,6 +60,7 @@ requirements:
     - psutil
     - pydantic
     - pydantic-extra-types
+    - pydantic-settings
     - pygithub
     - pymongo
     - pynamodb
