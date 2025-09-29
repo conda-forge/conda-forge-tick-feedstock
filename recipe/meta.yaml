@@ -28,6 +28,7 @@ requirements:
     - python >={{ python_min }}
     - attrs
     - backoff
+    - bcrypt <5
     - cachecontrol
     - cachetools
     - click
