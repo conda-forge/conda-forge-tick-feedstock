@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - conda-forge-tick = conda_forge_tick.cli:main
     - conda-forge-tick-container = conda_forge_tick.container_cli:cli
@@ -38,7 +38,7 @@ requirements:
     - conda-forge-pinning
     - conda-libmamba-solver
     - conda-forge-metadata >=0.3.0
-    - conda-forge-feedstock-ops >=0.10.2
+    - conda-forge-feedstock-ops >=0.12.0
     - conda-package-handling
     - conda-smithy >=3.34.1
     - conda-build >=3.24.0
@@ -68,7 +68,7 @@ requirements:
     - python-dateutil
     - python-graphviz
     - rattler-build >=0.35.4
-    - rattler-build-conda-compat >=1.3.2,<2
+    - rattler-build-conda-compat >=1.4.6,<2,!=1.4.7,!=1.4.8
     - requests
     - ruamel.yaml
     - ruamel.yaml.jinja2
