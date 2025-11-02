@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "conda-forge-tick" %}
-{% set version = "2025.10.103" %}
+{% set version = "2025.11.8" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/regro/cf-scripts/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 4b91b359e5099a60dda81945b57d0ab855af7551455c178cd2aa27f5940608cb
+  sha256: 5f858a71babc9451fcd831baf296218f5d515de402362aef68e667f1b492a300
 
 build:
   noarch: python
@@ -43,6 +43,7 @@ requirements:
     - conda-smithy >=3.34.1
     - conda-build >=3.24.0
     - curl
+    - dateparser
     - depfinder
     - distributed
     - feedparser
