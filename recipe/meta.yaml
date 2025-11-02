@@ -43,6 +43,7 @@ requirements:
     - conda-smithy >=3.34.1
     - conda-build >=3.24.0
     - curl
+    - dateparser
     - depfinder
     - distributed
     - feedparser
