@@ -6,5 +6,5 @@ conda_build:
 conda_forge_output_validation: true
 bot:
   version_updates:
-    random_fraction_to_keep: 0.25 
+    random_fraction_to_keep: 0.10
   automerge: true
