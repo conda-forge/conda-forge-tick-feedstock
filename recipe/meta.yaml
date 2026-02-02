@@ -1,6 +1,6 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set name = "conda-forge-tick" %}
-{% set version = "2026.2.0" %}
+{% set version = "2026.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/regro/cf-scripts/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 5c5fe001e2653e30b7b35b25752609238922dfbc713b4db9be9f2c18f7ad419b
+  sha256: 831702039ad56018f4bd1ff870d91496158ef44acc1da4a0fb6f0a4c7c1aef56
 
 build:
   noarch: python
@@ -28,20 +28,20 @@ requirements:
     - python >={{ python_min }}
     - attrs
     - backoff
-    - bcrypt <5
+    - bcrypt
     - cachecontrol
     - cachetools
     - click
-    - conda
+    - conda >=25
     - conda-lock
-    - conda-forge-feedstock-check-solvable >=0.12.0
     - conda-forge-pinning
     - conda-libmamba-solver
-    - conda-forge-metadata >=0.3.0
-    - conda-forge-feedstock-ops >=0.12.0
+    - conda-forge-metadata >=0.12.0
+    - conda-forge-feedstock-ops >=0.15.1
+    - conda-recipe-manager >=0.6.1
     - conda-package-handling
     - conda-smithy >=3.54.2
-    - conda-build >=3.24.0
+    - conda-build >=25
     - curl
     - dateparser
     - depfinder
