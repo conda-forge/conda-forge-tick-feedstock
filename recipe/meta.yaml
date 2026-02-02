@@ -1,4 +1,4 @@
-{% set python_min = "3.11" %}
+{% set python_min = "3.12" %}
 {% set name = "conda-forge-tick" %}
 {% set version = "2026.2.4" %}
 
@@ -28,20 +28,20 @@ requirements:
     - python >={{ python_min }}
     - attrs
     - backoff
-    - bcrypt <5
+    - bcrypt
     - cachecontrol
     - cachetools
     - click
-    - conda
+    - conda >=25
     - conda-lock
     - conda-forge-pinning
     - conda-libmamba-solver
-    - conda-forge-metadata >=0.3.0
+    - conda-forge-metadata >=0.12.0
     - conda-forge-feedstock-ops >=0.15.1
     - conda-recipe-manager >=0.6.1
     - conda-package-handling
     - conda-smithy >=3.54.2
-    - conda-build >=3.24.0
+    - conda-build >=25
     - curl
     - dateparser
     - depfinder
