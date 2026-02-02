@@ -38,6 +38,7 @@ requirements:
     - conda-libmamba-solver
     - conda-forge-metadata >=0.3.0
     - conda-forge-feedstock-ops >=0.15.1
+    - conda-recipe-manager >=0.6.1
     - conda-package-handling
     - conda-smithy >=3.54.2
     - conda-build >=3.24.0
