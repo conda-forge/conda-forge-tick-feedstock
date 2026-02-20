@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/regro/cf-scripts/archive/refs/tags/{{ version }}.tar.gz
-  sha256: b05446067ca8d3343fa9c97c4e2d5bb576ffdcbbb93008d5e866d17b61ef6082
+  sha256: 48070e4fb3c4b3d85a2a715a02bcb0858e35729db11c8f73ac879b9115371081
 
 build:
   noarch: python
