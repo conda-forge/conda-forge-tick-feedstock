@@ -3,11 +3,11 @@ About conda-forge-tick-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/conda-forge-tick-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/regro/cf-scripts
+Home: https://github.com/conda-forge/conda-forge-bot
 
 Package license: BSD-3-Clause AND MIT
 
-Summary: Flagship repo for cf-regro-autotick-bot
+Summary: Flagship repo for conda-forge-bot
 
 Current build status
 ====================
