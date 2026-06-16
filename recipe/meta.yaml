@@ -7,13 +7,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/regro/cf-scripts/archive/refs/tags/{{ version }}.tar.gz
+  url: https://github.com/conda-forge/conda-forge-bot/archive/refs/tags/{{ version }}.tar.gz
   sha256: bdcb576e96e152be492a641f7f3b2e130c5b5a5559bcafad420d11c7ad09148b
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - conda-forge-tick = conda_forge_tick.cli:main
     - conda-forge-tick-container = conda_forge_tick.container_cli:cli
@@ -93,8 +93,8 @@ test:
     - conda-forge-tick-container --help
 
 about:
-  home: https://github.com/regro/cf-scripts
-  summary: 'Flagship repo for cf-regro-autotick-bot'
+  home: https://github.com/conda-forge/conda-forge-bot
+  summary: 'Flagship repo for conda-forge-bot'
   license: BSD-3-Clause AND MIT
   license_file: License
 
