@@ -35,9 +35,9 @@ requirements:
     - cachecontrol
     - cachetools
     - click
-    - conda >=25
-    - conda-build >=25
-    - conda-forge-feedstock-ops >=0.19.1
+    - conda >=26
+    - conda-build >=26
+    - conda-forge-feedstock-ops >=0.20.0
     - conda-forge-metadata >=2026.9.5
     - conda-forge-pinning
     - conda-libmamba-solver
@@ -57,11 +57,11 @@ requirements:
     - lockfile
     - mamba >=0.23
     - msgpack-python
-    - networkx !=2.8.1
+    - networkx >=2.8.6
     - orjson
     - packaging
     - psutil
-    - py-rattler >=0.22.0,<0.26.0a0
+    - py-rattler>=0.22.0,<0.26.0a0
     - pydantic >=2.13
     - pydantic-extra-types
     - pydantic-settings >=2.15
