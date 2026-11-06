@@ -14,7 +14,7 @@ source:
   sha256: 892cc26fcc43edd71e9faddab51d94d66fb6647065f87d0adc2292395273ea5b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -70,8 +70,8 @@ requirements:
     - pynamodb
     - python-dateutil
     - python-graphviz
-    - rattler-build >=0.74,<0.76.0a0
-    - rattler-build-conda-compat >=1.4.13,<2
+    - rattler-build >=0.80,<0.81.0a0
+    - rattler-build-conda-compat >=1.4.23,<2
     - requests
     - ruamel.yaml
     - ruamel.yaml.jinja2
